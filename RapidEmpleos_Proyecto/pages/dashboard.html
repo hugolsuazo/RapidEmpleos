@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Universidad Tegnologica de Honduras" content="Tegucigalpa">
+    <meta name="Dashboard" content="Programacion Web I">
+    <meta name="RapiEmpleos" content="Datatravalier">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=PW">
+    <link rel="stylesheet" href="../rsc/css/style1.css">
+    <script src="https://kit.fontawesome.com/760ea38816.js" crossorigin="anonymous"></script>
+    <title> RAPID EMPLEOS | Dashboad</title>
+</head>
+
+<body>
+
+    <main id="Menu">
+        <section id="Formulario">
+            <h1> DASHBoard RapiEmpleos</h1>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="Ingrese su nombre">
+                <label for="apellido">Apellido</label>
+                <input id="apellido" type="text" placeholder="Ingrese su apellido">
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="text" placeholder="Ingrese su telefono">
+                <label for="correo">Correo</label>
+                <input id="correo" type="email" placeholder="Ingrese direccion de correo">
+                <label for="contrasena">Contraseña</label>
+                <input id="contrasena" type="password" placeholder="Ingrese su contrasena">
+                <button id="btnaddup" type="submit" onmousemove="">Guardar informacion</button>
+                <!-- addup = Lo utilizaremos para guardar los elementos y para actualizarlos -->
+            </form>
+
+
+        </section>
+
+        <section id="Contt">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Telefono</th>
+                        <th>Correo</th>
+                        <th>Contraseña</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td id="basurero"><i class="fas fa-trash-alt"></i></td>
+                        <td id="actualizar"><i class="fas fa-sync"></i></td>
+                        <td>Axl</td>
+                        <td>Carcamo</td>
+                        <td>+(504) 3352-4715</td>
+                        <td>carcamo@me.com</td>
+                        <td>F@ntasticM</td>
+
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+
+
+    
+    <script src="/rsc/javascript/model/User.js"></script>
+    <script src="/rsc/javascript/controlador/user.js"></script>
+    <script src="/rsc/javascript/index.js"></script>
+
+</body>
+
+</html>
+
+<!-- Inicio del desarrollo 06112021 Independiente en simultaneo con la edicion de algunos elementos para pagina -->
+<!-- 05:10PM 1ra porcion de responsividad creada. Adicion de css para con los elementos del formulario y la tabla -->
+<!-- 05:30PM RP 1838 -->
+<!-- 00:42AM RP 1838 Continuancion del proyecto -->
+<!-- 02:16AM 4032 Creacion estructura js para gestion y control del dashboard  -->
+<!-- 02:59AM 4628 CRUD Unicamente ready https://youtu.be/kXt_55factU -->
+<!-- 09:30PM 08112021 Inicio de desarrollo del dia -->
