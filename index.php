@@ -42,12 +42,12 @@
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.html" class="nav-link px-2 text-white"><i class="bi bi-house-fill"></i>  Inicio</a></li>
-                    <li><a href="pages/cv.html" class="nav-link px-2 text-white">Aspirantes</a></li>
+                    <li><a href="" class="nav-link px-2 text-white"><i class="bi bi-house-fill"></i>  Inicio</a></li>
+                    <li><a href="/index.php" class="nav-link px-2 text-white">Aspirantes</a></li>
                     <li><a href="pages/empresas.html" class="nav-link px-2 text-white">Empresas</a></li>
                     <li><a href="pages/empleos.html" class="nav-link px-2 text-white">Empleos</a></li>
                     <li><a href="pages/nosotros.html" class="nav-link px-2 text-white">Nosotros</a></li>
-                    <li><a href="pages/contacto.html" class="nav-link px-2 text-white">Contacto</a></li>
+                    <li><a href="pages/contacto.php" class="nav-link px-2 text-white">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -191,7 +191,7 @@
                 <div class="col-2">
                     <h5>Nosotros</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-muted">Inicio</a></li>
                         <li class="nav-item mb-2"><a href="pages/empleos.html" class="nav-link p-0 text-muted">Empleos</a></li>
                         <li class="nav-item mb-2"><a href="pages/politica.html" class="nav-link p-0 text-muted">Política</a></li>
                         <li class="nav-item mb-2"><a href="pages/contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
