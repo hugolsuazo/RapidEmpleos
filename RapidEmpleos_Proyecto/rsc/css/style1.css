@@ -1,0 +1,171 @@
+/* Tipografias a emplear entre elementos de dashboard para RapiEmpleos */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Mirza&family=Mochiy+Pop+P+One&family=Sansita:ital,wght@1,700&family=Spartan:wght@100&family=Tulpen+One&display=swap");
+
+body {
+  margin: 0px;
+  /* background-color: red; Prueba validar enlace con la hoja stylo*/
+  /* Estos cambios son sugeridos no es obligatorio formateamos propiedas o atributos por defecto en body */
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+#Menu {
+  display: grid;
+  gap: 10px;
+  /* En este punto el GAP hace una separacion entre elementos */
+  grid-template-columns: 1fr 1fr;
+  /* 1fr es una manera de describir un 1/2 de un segmento o decir un fragmento o porcion en
+  blando de la pantalla */
+  padding: 9px;
+  /* Con esta parte se crea un espacio entre elemento incluyendo el margen top aun no siendo esto
+  el nombre correcto */
+}
+
+/* Formulario  */
+#Formulario {
+  /* background-color: rgba(35, 149, 211, 0.797); */
+  padding: 5px;
+  box-shadow: 0px 0px 8px rgb(133, 132, 132);
+}
+
+#Formulario > h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Anton", sans-serif;
+  font-size: 35px;
+  text-shadow: 0px 0px 3px rgb(133, 132, 132);
+}
+
+#Formulario > form {
+  /*  Esta manera de utilizar el selector la comprendo como un hijo directo  */
+  display: flex;
+  /* Display flex acomoda los elementos uno contiguo al otro de manera verticla */
+  flex-direction: column;
+  /* Flex siendo la propiedad ahora se le agrega el atributo el cual lo establece en una sola columna
+  vertical */
+  gap: 2px;
+  /* Se genera un espacio entre los elementos de 2px con el fin de que el texto no se mire
+  no legible de las opciones */
+}
+
+#Formulario > form > input {
+  /* Margin top lo que hara es separar el boton de los elementos del formulario */
+  padding: 3px;
+  /* El pading en este caso hara que los campus input sean mas grandes. */
+  border-radius: 6px;
+  border: 2px solid 212px 212px 212px;
+  /* border establecera un color global en todo el borde de los input un poco mas claro */
+}
+
+#Formulario > form > button {
+  margin-top: 10px;
+  /* Margin top lo que hara es separar el boton de los elementos del formulario */
+  padding: 4px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(103, 246, 191);
+  background: linear-gradient(
+    97deg,
+    rgba(103, 246, 191, 1) 23%,
+    rgba(0, 123, 255, 1) 100%
+  );
+
+  color: rgb(255, 255, 255);
+  /* En este punto el color solo cambia el color del texto unicamente */
+}
+
+#Formulario > form > button:hover {
+  /* Hover es una seudoclase */
+  cursor: pointer;
+  /* Cursor establece que cuando se pase el mouse sobre la etiqueta button cambie el curso */
+  transform: scale(0.91);
+  /* transform esta propiedad con su atributo crea una animacion de contraccion */
+  background-color: rgb(18, 160, 11);
+}
+
+#Contt {
+  /* padding-top: 10px; */
+  /* padding-top me ayudo a separar el formulario de la tabla */
+  background-color: rgba(103, 246, 191, 1) 23%;
+  /* backgorund - color establece una color pero solo en la primera line */
+}
+
+table,
+td,
+th,
+tr {
+  border: 1px solid black;
+  /*  Mediante esta seleccion de lo herencias de etiquetas establecemos un borde a la tabla pero 
+  la misma posee un doble lineado debemos eliminar al menos una de las lineas. */
+  border-collapse: collapse;
+  /* text-align: center; Esta podria ser una opcion para centrar el texto dentro de la tabla pero
+  de acorde a los datos podria ser algo incomodo tener que hacerlo por elemento posteriormente */
+}
+
+th {
+  background-color: rgb(130, 244, 181);
+  color: rgb(12, 106, 150);
+  /* Color establece un color pero al texto en el encabezado de cada columna */
+  padding: 3px 12px 3px 12px;
+  /* Padding en este sitio nos ayuda establecer un espaciado entre el texto y los bordes de la
+  tabla como tal */
+}
+
+td {
+  padding: 2px 12px 2px 12px;
+}
+
+tr {
+  color: blue;
+}
+
+/* Sistema punto de ruptura abajo un detalle general de las dimensiones */
+
+/* Dispositivos extra pequeños (teléfonos, de 600px en adelante) */
+@media only screen and (max-width: 600px) {
+  /* Segun la dimension decidimos cambiar el fondo y con ello variar el entorno mediante colores */
+
+  #Menu {
+    grid-template-columns: 1fr;
+    /* 1fr es una manera de describir un 1/2 de un segmento o decir un fragmento o porcion en
+    blando de la pantalla o para que esto quede aun mas claro que quede de una columna*/
+  }
+}
+
+/* Dispositivos pequeños (tabletas en formato vertical y teléfonos grandes, a partir de 600px) */
+@media only screen and (min-width: 600px) {
+  /* Segun la dimension decidimos cambiar el fondo y con ello variar el entorno mediante colores */
+
+  #Menu {
+    grid-template-columns: 1fr;
+    /* 1fr es una manera de describir un 1/2 de un segmento o decir un fragmento o porcion en
+    blando de la pantalla o para que esto quede aun mas claro que quede de una columna*/
+  }
+}
+
+/* Dispositivos medianos (tabletas apaisadas, a partir de 768px) */
+@media only screen and (min-width: 768px) {
+  /* Segun la dimension decidimos cambiar el fondo y con ello variar el entorno mediante colores */
+}
+
+/* Dispositivos grandes (ordenadores portátiles/de sobremesa, a partir de 992px) */
+@media only screen and (min-width: 992px) {
+  /* Segun la dimension decidimos cambiar el fondo y con ello variar el entorno mediante colores */
+
+  #Menu {
+    grid-template-columns: 1fr 1fr;
+    /* 1fr es una manera de describir un 1/2 de un segmento o decir un fragmento o porcion en
+    blando de la pantalla o para que esto quede aun mas claro que quede de una columna*/
+  }
+}
+
+/* Dispositivos extra grandes (portátiles y ordenadores de sobremesa grandes, a partir de 1200px) */
+@media only screen and (min-width: 1200px) {
+  /* Segun la dimension decidimos cambiar el fondo y con ello variar el entorno mediante colores */
+
+  #Menu {
+    grid-template-columns: 1fr 1fr;
+    /* 1fr es una manera de describir un 1/2 de un segmento o decir un fragmento o porcion en
+    blando de la pantalla o para que esto quede aun mas claro que quede de una columna*/
+  }
+}
